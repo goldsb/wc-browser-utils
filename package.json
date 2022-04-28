@@ -1,6 +1,6 @@
 {
-  "name": "@walletconnect/browser-utils",
-  "version": "1.7.8",
+  "name": "@goldsb/wc-browser-utils",
+  "version": "1.7.9",
   "description": "Browser Utilities for WalletConnect",
   "scripts": {
     "clean": "rm -rf dist",
@@ -24,7 +24,7 @@
     "dapp"
   ],
   "author": "WalletConnect, Inc. <walletconnect.com>",
-  "homepage": "https://github.com/WalletConnect/walletconnect-monorepo/",
+  "homepage": "https://github.com/goldsb/wc-browser-utils/",
   "license": "Apache-2.0",
   "main": "dist/cjs/index.js",
   "browser": "dist/esm/index.js",
@@ -35,10 +35,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walletconnect/walletconnect-monorepo.git"
+    "url": "git+https://github.com/goldsb/wc-browser-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/walletconnect/walletconnect-monorepo/issues"
+    "url": "https://github.com/goldsb/wc-browser-utils/issues"
   },
   "devDependencies": {
     "@babel/cli": "7.8.3",
