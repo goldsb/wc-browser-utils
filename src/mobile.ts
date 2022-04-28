@@ -6,11 +6,15 @@ export const mobileLinkChoiceKey = "WALLETCONNECT_DEEPLINK_CHOICE";
 
 export function formatIOSMobile(uri: string, entry: IMobileRegistryEntry) {
   const encodedUri: string = encodeURIComponent(uri);
-  return entry.universalLink
-    ? `${entry.universalLink}/wc?uri=${encodedUri}`
-    : entry.deepLink
-    ? `${entry.deepLink}${entry.deepLink.endsWith(":") ? "//" : "/"}wc?uri=${encodedUri}`
-    : "";
+  const isMobile = () => {
+    return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? true : false;
+  }
+
+  return !isMobile()
+      ? `${entry.universalLink}/wc?uri=${encodedUri}`
+      : entry.deepLink
+          ? `${entry.deepLink}${entry.deepLink.endsWith(":") ? "//" : "/"}wc?uri=${uri}`
+          : "";
 }
 
 export function saveMobileLinkInfo(data: IMobileLinkInfo) {

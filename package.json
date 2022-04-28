@@ -1,6 +1,6 @@
 {
   "name": "@goldsb/wc-browser-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browser Utilities for WalletConnect",
   "scripts": {
     "clean": "rm -rf dist",
